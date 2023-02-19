@@ -1,0 +1,32 @@
+ {% extends "base.html" %}
+
+    {% block content %}
+    <form action="{{url_for('formula')}}" method="post" id="formula"><div>
+        <table style="background-color: silver">
+        
+            
+            <tr>
+                <td>Name:</td><td><input type="text" name="imie"></td>
+            </tr>
+            <tr>
+                <td>Seconud Name:</td><td><input type="text" name="nazwisko"></td>
+            </tr>
+            <tr>
+                <td>Old:</td><td><input type="text" name="wiek"></td>
+            </tr>
+            <select id = "gender" name="gender">
+                {% for gender in type_g.genders%}
+                    <option value="{{gender.code}}">{{gender.name}}</option> 
+                {%endfor%}
+            </select>
+            <tr>
+            <br>
+            <td colspan="2" style="text-align: center"><br>
+                <input type="submit" value="submit">
+                <input type="reset" value="reset">
+            </td>
+        </tr>
+        </table>
+        </div>
+    </form>
+    {% endblock %}

@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{%block title %}
+Relic
+{% endblock %}
+{% block content %}
+<div class="container text-center">
+    <div class="row md-5">
+        <div class="col">
+            <img src="{{url_for('static',filename='Relic_GUI_elements.png')}}"width="250" 
+            height="334">
+            <img src="{{url_for('static',filename='CP2077_Relic.png')}}">
+        </div>
+
+    </div>
+</div>
+<br /> 
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Relic
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Relic is an interface and component of Arasaka's experimental, flagship project publicly known as "Secure Your Soul." It uses the concept of personality transferal by converting the data in the human nervous system into a digitized engram and stored as a construct on the Relic biochip. The purpose of "Secure Your Soul" is the ability – currently only available to the wealthiest clients – to communicate with deceased loved ones. Their personality constructs, which are preserved on the Relic biochip mean that in practice, death is no longer the ultimate barrier. However, it doesn't take a genius to realize that the potential for the Relic technology is much higher</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Mikoshi
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Mikoshi is one of the most heavily guarded data fortresses in Arasaka and holds the digitized minds of clients from the "Secure Your Soul" program. For security reasons, information about the program is still classified by the corporation and the physical location of Mikoshi is a closely guarded secret together the smattering of access points nested in cyberspace. Among netrunners who have breached Arasaka there's a widespread belief that Mikoshi is a "soul prison" for the digitized victims of Soulkiller. Rumor has it that Arasaka uses the souls of captured netrunners to use them as data collectors, but so far no one has been able to verify this.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Izanagi
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Izanagi is the name for the Mikoshi access point located right under the Arasaka Tower in Night City. To access the facility, an Arasaka employee must first have an active "Kisen" authorization level, followed by a registration and granted permission for the requested session. If said employee also wants to use the facility for research purposes, they will require input of the grant or a permit number issued by the acting head of the Arasaka Research Operations. Additionally, all sessions will be recorded.</div>
+    </div>
+  </div>
+</div>
+{% endblock %}

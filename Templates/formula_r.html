@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+    {% block content %}
+    <h1>
+
+        <br>Name  {{imie}}   
+        <br>Secound name {{nazwisko}}   
+        <br>Old {{wiek}}        
+        <br>Gender {{gender}}
+        {%if gender_info.code != 'none'%}
+        <img src="{{url_for('static',filename=gender_info.symbol)}}">
+        {%else %} 
+        <p>Gender is unknow </p>
+        {%endif%}
+    </h1> 
+    {% endblock %}   
